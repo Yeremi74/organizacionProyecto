@@ -1,0 +1,240 @@
+/* .tablePanelAdminContainer {
+  margin: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  thead {
+    min-height: 100px;
+    th {
+      background-color: #f2f2f2;
+    }
+  }
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+}
+tbody {
+  tr {
+    td {
+      text-transform: capitalize;
+      text-align: center;
+      &:first-child {
+        text-align: start;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+
+  #options {
+    svg {
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      margin-left: 20px;
+    }
+  }
+}
+div img {
+  min-width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.available {
+  font-weight: bold;
+  width: 10px;
+  p {
+    background-color: var(--green-bg);
+    color: var(--green-text);
+    height: 40px;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}
+
+.no-available {
+  font-weight: bold;
+  width: 10px;
+  p {
+    background-color: var(--red-bg);
+    color: var(--red-text);
+    height: 40px;
+    display: flex;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.toast-button {
+  color: white;
+  border-radius: 5px;
+  padding: 7px;
+  transition: all 100ms;
+  border: none;
+}
+
+.toast-button-cancel {
+  background-color: gray;
+  &:hover {
+    background-color: rgb(60, 60, 60);
+  }
+}
+
+.toast-button-delete {
+  background-color: var(--red-text);
+  margin-right: 7px;
+  &:hover {
+    background-color: rgb(191, 30, 30);
+  }
+}
+.dark-mode header {
+  background-color: #3e3e3e;
+}
+.dark-mode {
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+}
+
+.dark-mode th {
+  background-color: #4b4b4b;
+  color: #e0e0e0;
+
+  select {
+    background-color: #303136;
+    color: white;
+  }
+}
+
+.dark-mode tr:nth-child(even) {
+  background-color: #3b3b3b;
+}
+
+.dark-mode .available p {
+  background-color: #5a925c;
+  color: white;
+}
+
+.dark-mode .no-available {
+  p {
+    background-color: var(--red-text);
+    color: white;
+  }
+}
+
+.dark-mode label {
+  color: #e0e0e0 !important;
+}
+
+th {
+  select {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+
+    option {
+      font-size: 15px;
+    }
+  }
+}
+
+.price {
+  align-items: center;
+  gap: 6px;
+  .price-arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    svg {
+      background-color: white;
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      border-radius: 7px;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.dark-mode {
+  .price {
+    .price-arrow {
+      svg {
+        background-color: #2b2b2b;
+      }
+    }
+  }
+}
+#options {
+  position: relative;
+
+  .options-content {
+    position: relative;
+    width: fit-content;
+
+    .optionsContainer {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: -50px;
+      right: -30px;
+      width: 40px;
+      gap: 4px;
+      background-color: white;
+      box-shadow: 0px 0px 5px rgb(166, 166, 166);
+      padding: 10px 0px;
+      border-radius: 5px;
+      animation: fadeIn 200ms;
+
+      #edit {
+        color: var(--green-text);
+      }
+
+      #trash {
+        color: var(--red-text);
+      }
+
+      svg {
+        width: 15px;
+        height: 15px;
+        margin: 0 auto;
+      }
+    }
+  }
+} */

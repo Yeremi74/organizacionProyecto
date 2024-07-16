@@ -1,0 +1,38 @@
+{
+  "name": "ecommerce-mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon server",
+    "build": "npm run build --prefix client",
+    "start": "node server index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "bcryptjs": "^2.4.3",
+    "client": "^0.0.1",
+    "cloudinary": "^2.2.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-fileupload": "^1.5.0",
+    "framer-motion": "^11.1.2",
+    "fs-extra": "^11.2.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.3",
+    "morgan": "^1.10.0",
+    "zod": "^3.23.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
