@@ -4,27 +4,33 @@ import axios from 'axios';
 
 export const getSearchProductRequest = async (searchText) => {
   return await axios.get(
-    `http://localhost:3001/api/products/catalog/${searchText}`
+    `https://organizacionproyecto.onrender.com/api/products/catalog/${searchText}`
   );
 };
 
 export const getProductsRequest = async () =>
-  await axios.get(`http://localhost:3001/api/products`);
+  await axios.get(`https://organizacionproyecto.onrender.com/api/products`);
 
 export const getProductsbySearchRequest = async (text) => {
   console.log(text);
-  return await axios.get(`http://localhost:3001/api/products/search/${text}`);
+  return await axios.get(
+    `https://organizacionproyecto.onrender.com/api/products/search/${text}`
+  );
 };
 
 // !DELETE
 export const deleteRequest = async (params, id) => {
-  console.log(`http://localhost:3001/api/${params}/${id}`);
-  await axios.delete(`http://localhost:3001/api/${params}/${id}`);
+  console.log(`https://organizacionproyecto.onrender.com/api/${params}/${id}`);
+  await axios.delete(
+    `https://organizacionproyecto.onrender.com/api/${params}/${id}`
+  );
 };
 
 // !GET
 export const getUniqueProductRequest = async (params, id) =>
-  await axios.get(`http://localhost:3001/api/${params.toLowerCase()}/${id}`);
+  await axios.get(
+    `https://organizacionproyecto.onrender.com/api/${params.toLowerCase()}/${id}`
+  );
 
 // !POST
 export const createRequest = async (product, id) => {
@@ -37,28 +43,32 @@ export const createRequest = async (product, id) => {
     form.append(key, product[key]);
   }
 
-  return await axios.post(`http://localhost:3001/api/${id}`, form, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+  return await axios.post(
+    `https://organizacionproyecto.onrender.com/api/${id}`,
+    form,
+    {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    }
+  );
 };
 
 export const filterRequest = async (cat, collec, sort) => {
   return await axios.get(
-    `http://localhost:3001/api/products/${cat}/${collec}/${sort}`
+    `https://organizacionproyecto.onrender.com/api/products/${cat}/${collec}/${sort}`
   );
 };
 
 // ! PUT
 export const sumarRequest = async (number, id) => {
   return await axios.put(
-    `http://localhost:3001/api/products/sumar/${number}/${id}`
+    `https://organizacionproyecto.onrender.com/api/products/sumar/${number}/${id}`
   );
 };
 export const restarRequest = async (number, id) => {
   return await axios.put(
-    `http://localhost:3001/api/products/restar/${number}/${id}`
+    `https://organizacionproyecto.onrender.com/api/products/restar/${number}/${id}`
   );
 };
 
@@ -84,9 +94,13 @@ export const updateProductRequest = async (params, id, newFields) => {
       form2.append(key, newFields[key]);
     }
   }
-  return await axios.put(`http://localhost:3001/api/${params}/${id}`, form2, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+  return await axios.put(
+    `https://organizacionproyecto.onrender.com/api/${params}/${id}`,
+    form2,
+    {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    }
+  );
 };

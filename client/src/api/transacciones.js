@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 export const getTransaccionesRequest = async () => {
-  return await axios.get(`http://localhost:3001/api/transacciones`);
+  return await axios.get(
+    `https://organizacionproyecto.onrender.com/api/transacciones`
+  );
 };
 export const createRequest = async (product) => {
   console.log(product);
@@ -13,9 +15,13 @@ export const createRequest = async (product) => {
     form.append(key, product[key]);
   }
 
-  return await axios.post(`http://localhost:3001/api/transacciones`, form, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+  return await axios.post(
+    `https://organizacionproyecto.onrender.com/api/transacciones`,
+    form,
+    {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    }
+  );
 };

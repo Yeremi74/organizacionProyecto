@@ -1,6 +1,6 @@
 import axios from 'axios';
 export const getCategoryRequest = async () =>
-  await axios.get(`http://localhost:3001/api/category`);
+  await axios.get(`https://organizacionproyecto.onrender.com/api/category`);
 
 export const createRequest = async (product) => {
   console.log(product);
@@ -12,9 +12,13 @@ export const createRequest = async (product) => {
     form.append(key, product[key]);
   }
 
-  return await axios.post(`http://localhost:3001/api/category`, form, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+  return await axios.post(
+    `https://organizacionproyecto.onrender.com/api/category`,
+    form,
+    {
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    }
+  );
 };

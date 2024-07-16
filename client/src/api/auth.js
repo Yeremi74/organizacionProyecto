@@ -1,6 +1,6 @@
 import axios from './axios.js';
 
-// const API = 'http://localhost:3001/api';
+// const API = 'https://organizacionproyecto.onrender.com/api';
 
 export const registerRequest = (user) => axios.post(`/register`, user);
 
