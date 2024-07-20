@@ -77,6 +77,12 @@ const Purchase = () => {
     await createRequest(transaccion);
     navigate(`/admin/products`);
   };
+  useEffect(() => {
+    setTransaccion((prevState) => ({
+      ...prevState,
+      price: product.price,
+    }));
+  }, [product]);
 
   return (
     <div>
@@ -146,6 +152,7 @@ const Purchase = () => {
                       ...prevState,
                       price: e.target.value,
                     }));
+                    console.log(e.target.value);
                     setProduct((prevState) => ({
                       ...prevState,
                       price: e.target.value,

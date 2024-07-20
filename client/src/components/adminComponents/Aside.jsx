@@ -23,7 +23,7 @@ const Aside = () => {
     <NavbarAdmin>
       <SideBarItem
         icon={<Boxes size={20} />}
-        text='products'
+        text='productos'
         url='/admin/products'
         setSelected={setSelected}
         selected={selected}
@@ -37,7 +37,7 @@ const Aside = () => {
       />
       <SideBarItem
         icon={<Receipt size={20} />}
-        text='colecciones'
+        text='transacciones'
         url='/admin/transacciones'
         setSelected={setSelected}
         selected={selected}
